@@ -33,7 +33,7 @@ class Zoom implements MeetingInterface
             'iss' => $key,
             'exp' => strtotime('+1 minute'),
         ];
-        return \Firebase\JWT\JWT::encode($payload, $secret, 'HS256');
+//        return \Firebase\JWT\JWT::encode($payload, $secret, 'HS256');
     }
 
     private function meetingRequest()

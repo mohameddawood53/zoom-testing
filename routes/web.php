@@ -15,15 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 //    return view('welcome');
-//  return  (new \App\Reposotiries\Meetings\Meeting(new \App\Reposotiries\Meetings\Zoom()))->registerMeetingUser([
-//      'email' => "admin@admin.com",
-//      'name' => "mohamed",
-//      'last_name' => null,
-//  ]);
+  return  (new \App\Reposotiries\Meetings\Meeting(new \App\Reposotiries\Meetings\Zoom()))->createMeetingUser([
+      'email' => "admin@admin.com",
+      'name' => "mohamed",
+      'last_name' => null,
+  ]);
 
-    return  \App\Reposotiries\Meetings\Meeting::Init(new \App\Reposotiries\Meetings\Zoom())->registerMeetingUser([
-        'email' => "admin@admin.com",
-        'name' => "mohamed",
-        'last_name' => null,
-    ]);
+//    return  \App\Reposotiries\Meetings\Meeting::Init(new \App\Reposotiries\Meetings\Zoom())->createMeetingUser([
+//        'email' => "admin@admin.com",
+//        'name' => "mohamed",
+//        'last_name' => null,
+//    ]);
 });
